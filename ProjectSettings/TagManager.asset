@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Assignment
+  - Su
+  - Mo
+  - Tu
+  - We
+  - Th
+  - Fr
+  - Sa
   layers:
   - Default
   - TransparentFX

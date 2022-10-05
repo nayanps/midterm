@@ -120,12 +120,12 @@ TextureImporter:
       name: assignments_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 26
         y: 28
-        width: 523
+        width: 497
         height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,13 +141,13 @@ TextureImporter:
       name: assignments_1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 588
-        width: 494
-        height: 459
+        x: 29
+        y: 590
+        width: 493
+        height: 458
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -162,12 +162,12 @@ TextureImporter:
       name: assignments_2
       rect:
         serializedVersion: 2
-        x: 522
-        y: 28
-        width: 557
-        height: 460
+        x: 584
+        y: 31
+        width: 492
+        height: 456
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: assignments_3
       rect:
         serializedVersion: 2
-        x: 522
-        y: 588
-        width: 556
-        height: 459
+        x: 584
+        y: 595
+        width: 487
+        height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,13 +204,13 @@ TextureImporter:
       name: assignments_4
       rect:
         serializedVersion: 2
-        x: 1078
-        y: 588
-        width: 556
-        height: 459
+        x: 1136
+        y: 593
+        width: 493
+        height: 454
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -225,12 +225,12 @@ TextureImporter:
       name: assignments_5
       rect:
         serializedVersion: 2
-        x: 1634
-        y: 588
-        width: 556
-        height: 459
+        x: 1694
+        y: 595
+        width: 490
+        height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: assignments_6
       rect:
         serializedVersion: 2
-        x: 2190
-        y: 340
-        width: 574
-        height: 707
+        x: 2247
+        y: 590
+        width: 492
+        height: 455
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
