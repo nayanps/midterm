@@ -10,12 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 5198643614967636904}
   - component: {fileID: 5198643614967636911}
-  - component: {fileID: 5198643614967636905}
   - component: {fileID: 5198643614967636906}
   - component: {fileID: 5198643614967636902}
   - component: {fileID: 5198643614967636901}
   - component: {fileID: 5198643614967636900}
   - component: {fileID: 5198643614967636907}
+  - component: {fileID: 5260904414726977543}
+  - component: {fileID: 4429473135745933430}
   m_Layer: 0
   m_Name: monday_assignment
   m_TagString: Assignment
@@ -90,19 +91,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5198643614967636905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5198643614967636910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ef7f0464ff6494391367f7f95395a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!50 &5198643614967636906
 Rigidbody2D:
   serializedVersion: 4
@@ -224,3 +212,30 @@ CompositeCollider2D:
     m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
+--- !u!114 &5260904414726977543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198643614967636910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40994808b2b6a354c9cfb7991aa5bd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.2
+--- !u!114 &4429473135745933430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5198643614967636910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0683bdbe5bd64b4aab25ada4a9a0dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: Mo
+  triggered: 0
