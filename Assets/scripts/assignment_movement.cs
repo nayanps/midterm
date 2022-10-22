@@ -16,7 +16,7 @@ public class assignment_movement : MonoBehaviour
 
     void Update()
     {
-        //PingPong between 0 and 1
+        //assignments move back and forth
         float time = Mathf.PingPong(Time.time * speed, 1);
         transform.position = Vector3.Lerp(pointA, pointB, time);
     }
