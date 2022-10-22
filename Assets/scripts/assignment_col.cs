@@ -6,6 +6,12 @@ public class assignment_col : MonoBehaviour
 { //day determines which collider is being entered/exited
     public string day = "Mo";
     public bool triggered;
+    private ScoreManager scoreManager;
+
+    void Awake()
+    {
+        scoreManager = FindObjectOfType<ScoreManager>();
+    }
 
     public void OnTriggerEnter2D(Collider2D other)
     { //whenever an assignment enters the specific collider, the trigger is turned on
@@ -26,20 +32,19 @@ public class assignment_col : MonoBehaviour
     }
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && triggered == true)
+        if (Input.GetMouseButtonDown(0)) 
         {
-            Destroy(gameObject);
+            if (triggered == true) 
+            { 
+                Destroy(gameObject); 
+            }
+            else if (triggered == false)
+            {
+                scoreManager.MinusPercent();
+            }
+
         }
-    }
-    void Start()
-    {
 
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
 
     }
