@@ -5,7 +5,6 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     //percentage score 
-    //remember to add penalty to assignment_col!!! or this will literally do nothing lol
     int percentage = 100;
 
     //changing sprites for percentage number on top
