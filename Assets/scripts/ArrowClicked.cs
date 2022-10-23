@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ArrowClicked : MonoBehaviour
 {
@@ -10,9 +11,12 @@ public class ArrowClicked : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseOver()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            //go to desk room
+
+        }
     }
 }
