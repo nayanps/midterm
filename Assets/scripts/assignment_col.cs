@@ -63,8 +63,5 @@ public class assignment_col : MonoBehaviour
             }
 
         }
-
-        
-
     }
 }
