@@ -10,6 +10,7 @@ public class ITMouseClick : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Destroy(gameObject);
+            ITManager.instance.ClickIT();
         }
     }
 }

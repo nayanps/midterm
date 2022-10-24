@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/title_screen.unity
+    guid: 63e0c4bb40d0ec243966ad7367edba3d
+  - enabled: 1
     path: Assets/Scenes/room.unity
     guid: 527e757e1f9f29b489d2a58e061393ce
   - enabled: 1
+    path: Assets/Scenes/sleep_minigame.unity
+    guid: d4de1a1ef8943aa40847f43d24b5d106
+  - enabled: 1
+    path: Assets/Scenes/desk.unity
+    guid: 4494c99a96829f24599626ae7b5416bf
+  - enabled: 1
     path: Assets/Scenes/computer_minigame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/game_over.unity
+    guid: ff50db4e33271bb4f9aa42369a8d4ea4
   m_configObjects: {}

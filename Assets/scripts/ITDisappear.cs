@@ -13,13 +13,13 @@ public class ITDisappear : MonoBehaviour
     }
 
     IEnumerator Disappear()
-    { //thoughts disappear after 10s, reappear after 3s
+    { //thoughts disappear/reappear after 5s
         while (true) 
         {
             re.enabled = true;
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(5f);
             re.enabled = false;
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(10f);
         }
         
     }
