@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BedControls : MonoBehaviour
 { //NOT ACTUALLY BED CONTROLS. REUSE FOR COMPUTER /W/ VARIABLE FOR SCENE.
@@ -12,7 +13,7 @@ public class BedControls : MonoBehaviour
     //make minigame scene variable!!!
 
     // sparkles don't show up until player hovers over bed
-    void Start()
+    void Awake()
     { 
         re_1 = GameObject.Find("sparkles_1").GetComponent<Renderer>();
         re_1.enabled = false;
@@ -21,15 +22,15 @@ public class BedControls : MonoBehaviour
         re_2.enabled = false;
 
     }
-    void OnMouseOver()
+
+    public void OnMouseOver()
     { //player hovering over bed
 
         re_1.enabled = true;
         re_2.enabled = true;
-
         if (Input.GetMouseButtonDown(0))
         {
-            //go to minigame, use public variable!
+            SceneManager.LoadScene("sleep_minigame");
         }
     }
 

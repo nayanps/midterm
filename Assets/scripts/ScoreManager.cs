@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -13,7 +14,12 @@ public class ScoreManager : MonoBehaviour
     public Sprite ninety;
     public Sprite eighty;
     public Sprite seventy;
+    public HealthManager healthManager;
 
+    void Awake()
+    {
+        healthManager = FindObjectOfType<HealthManager>();
+    }
     void Update()
     { //changes percentage
         if (percentage == 100)
@@ -28,12 +34,16 @@ public class ScoreManager : MonoBehaviour
         {
             spriteRenderer.sprite = eighty;
         }
-        else if (percentage <= 70) //change to == later
+        else if (percentage == 70) //change to == later
         {
             spriteRenderer.sprite = seventy;
         }
+        else if (percentage < 70) //change to == later
+        {
+            SceneManager.LoadScene("desk");
+            healthManager.MinusHealth();
 
-        //add room change and overall lives count
+        }
 
     }
 
