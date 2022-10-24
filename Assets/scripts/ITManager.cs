@@ -9,6 +9,7 @@ public class ITManager : MonoBehaviour
     public int it_total=0;
     public static ITManager instance;
     public HealthManager healthManager;
+    public AudioSource crumple;
 
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class ITManager : MonoBehaviour
     { //generates its every 0.25s
         while (it_total < 120)
         {
+            crumple.Play();
             var it_pos_range = new Vector3(Random.Range(-9.0f, 9.0f), Random.Range(-5.0f, 5.0f),0);
             Instantiate(it,it_pos_range,Quaternion.identity);
             it_total+=1;

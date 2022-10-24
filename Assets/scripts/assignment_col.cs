@@ -7,6 +7,7 @@ public class assignment_col : MonoBehaviour
     public string day = "Mo";
     public Renderer re;
     public bool triggered;
+    public AudioSource click;
     private ScoreManager scoreManager;
 
     void Awake()
@@ -24,6 +25,7 @@ public class assignment_col : MonoBehaviour
     {
         while (true)
         {
+            click.Play();
             Debug.Log("assignment gone");
             re.enabled = false;
             yield return new WaitForSeconds(5f);

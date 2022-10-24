@@ -23,15 +23,12 @@ public class BedControls : MonoBehaviour
 
     }
 
-    public void OnMouseOver()
+
+    private void OnMouseOver()
     { //player hovering over bed
 
         re_1.enabled = true;
         re_2.enabled = true;
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("sleep_minigame");
-        }
     }
 
     private void OnMouseExit()

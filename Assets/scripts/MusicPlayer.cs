@@ -19,23 +19,8 @@ public class MusicPlayer : MonoBehaviour
         _audioSource.Play();
     }
 
-    public void PlayDing()
-    {
-        enter.Play();
-    }
-
     public void StopMusic()
     {
         _audioSource.Stop();
-    }
-
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            PlayDing();
-
-        }
-
     }
 }

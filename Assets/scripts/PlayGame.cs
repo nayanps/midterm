@@ -6,17 +6,25 @@ using static Unity.VisualScripting.Member;
 
 public class PlayGame : MonoBehaviour
 {
-    // Start is called before the first frame update
-   
+    public AudioSource ding;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            SceneManager.LoadScene("room");
-            
+            StartCoroutine(PressPlay());
+
         }
 
+    }
+    IEnumerator PressPlay()
+    {
+        while (true)
+        {
+           ding.Play();
+            yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene("room");
+            yield break;
+        }
     }
 }
